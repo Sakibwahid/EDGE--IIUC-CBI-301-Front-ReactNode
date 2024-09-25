@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family:Arial ,sans-serif;
+  font-family: Open Sans;
 }
 
 .container {
@@ -13,7 +13,7 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;                 
   align-items: center;
   margin: 50px 0 40px;
 }
@@ -40,7 +40,7 @@
 }
 
 .logo span {
-  color: #ff5c00;
+  color: #FD6E0A
 }
 
 
@@ -107,13 +107,11 @@ p {
   padding: 20px 40px;
   border-radius: 7px;
   font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.downloadcv {
+  border: solid 1px #ff5c00;
+  cursor: pointer; 
   background-color: #ff5c00;
   color: #fff;
+
 }
 
 .contactme {
@@ -131,8 +129,8 @@ p {
 }
 
 .aboutme {
-  background-color: rgb(250, 239, 224);
-  margin: 5%;
+  background-color: #FFF8F3;
+  margin: 10% 5% 5% 5%;
   height: 80%;
   padding: 10%;
   display: flex;
@@ -214,7 +212,7 @@ align-items: center;
 }
 .summary-content{
  display: flex;
-gap: 5%;
+ gap: 5%;
 
  }
  .summary-left, .summary-right{
@@ -229,8 +227,6 @@ gap: 5%;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  justify-content: ;
-
   }
  .line
   {
@@ -238,6 +234,60 @@ gap: 5%;
     border-bottom: 1px solid #888;
     padding-bottom: 5%;
     }
+  
+    .contact {
+      background-color: #FFF8F3;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; 
+      gap: 5%;
+      margin-top: 5%; 
+      padding: 10% 10%;
+  
+    }
+
+    .contact-left, .contact-right {
+      flex: 1;
+      align-items: start;
+    }
+    .contact header {
+        text-align: start;
+        margin-bottom: 16px;
+    
+      }
+      .contact p, .contact input{
+       margin-bottom: 16px;
+      }
+    
+     .icons{
+      
+       display: flex;
+       gap: 20px;
+    
+      }
+
+     .icons img
+     {
+      width: 24px;
+      height: 24px;
+     }
+     form{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     }
+     form input, form textarea{
+       width: 100%;
+       padding: 20px;
+       border-radius: 4px;
+       border: none;
+      }
+      form textarea{
+        height: 200px;
+        resize: none;
+        
+       }
+
 
 
  
