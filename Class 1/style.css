@@ -15,15 +15,13 @@
 }
 
 h2 {
-  font-size: 45px;
-  margin: 30px 0;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 h5 {
@@ -32,8 +30,8 @@ h5 {
   margin-bottom: 15px;
   font-size: 16px;
 }
-h3
-{
+
+h3 {
   font-size: 25px;
   color: var(--dark2);
 }
@@ -42,9 +40,11 @@ h4 {
   font-size: 18px;
   color: var(--dark2);
 }
+
 .education-content h4 {
   font-weight: 600;
 }
+
 p {
   color: var(--dark3);
   font-size: 16px;
@@ -58,8 +58,7 @@ p {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 50px 0 40px;
+  align-items: self-end;
 }
 
 .menu {
@@ -67,18 +66,18 @@ p {
   list-style: none;
 }
 
-.menu li {
-  padding: 20px;
+.menu li  {
+  margin-left: 20px;
 }
 
 .menu a {
-  font-size: 18px;
+  font-size: 16px;
   color: #131212;
   text-decoration: none;
 }
 
 .logo a {
-  font-size: 35px;
+  font-size: 20px;
   text-decoration: none;
   color: #000;
 }
@@ -90,45 +89,53 @@ p {
 
 .home {
   display: flex;
-  height: 100%;
-  background-image: url(Untitled-1.jpg);
-  background-size: 100%;
-  background-position: center;
+  height: 100vh;
+  background-color: #FFF8F3;
+  background-image: url('Group 12.png'); /* Correct the image path if needed */
   background-repeat: no-repeat;
-  flex-wrap: wrap;
+  background-position: bottom right; /* Position the background image in the bottom-right corner */
+
+ 
 }
 
 .left {
-  flex-basis: 15%;
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  margin: 0px 20px;
+}
 
+.left img {
+ margin-top: auto;
+ margin-bottom: auto;
+ max-height: 90%;
 
 }
 
 .right {
-  margin: 0 30px;
-  color: #000;
+flex: 1;
+  height: 100vh;
+  margin-left: 1.5%; 
+  margin-right: 10%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
 }
 
 .center-content {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.developer {
-  position: absolute;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 8vh;
-  letter-spacing: 35px;
-  color: rgb(168, 167, 167);
+   align-content: center;
+  
+}.center-content h2, 
+.center-content h1, 
+.center-content p, 
+.buttondiv {
+    margin-bottom: 20px;
 }
 
 
 .btn {
-  margin-top: 5%;
   margin-right: 2%;
   padding: 20px 40px;
   border-radius: 7px;
@@ -147,7 +154,7 @@ p {
 }
 
 .menu .hireme {
-  padding: 20px 40px;
+  padding: 13px 20px;
   border-radius: 7px;
   background-color: #ff5c00;
   color: #ffff;
@@ -156,8 +163,8 @@ p {
 
 .aboutme {
   background-color: #FFF8F3;
-  margin: 10% 5% 5% 5%;
-  padding: 15%;
+  margin: 10%;
+  padding: 10%;
   border-radius: 10px;
 }
 
@@ -183,7 +190,6 @@ header {
 
 .aboutme .bio .tittle {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   color: var(--dark3);
@@ -197,7 +203,7 @@ header {
 
 .work,
 .summary {
-  margin: 5%;
+  margin: 10%;
   display: flex;
   flex-direction: column;
   padding-top: 5%;
@@ -218,7 +224,7 @@ header {
   gap: 20px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(226, 221, 221, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(240, 236, 236, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card p {
@@ -238,6 +244,7 @@ header {
 
 .summary-content {
   display: flex;
+  flex-wrap: nowrap;
   gap: 5%;
 
 }
@@ -247,12 +254,13 @@ header {
 
   flex: 1;
 }
-.summary header
-{
+
+.summary header {
   margin-bottom: 30px;
 }
+
 .education-content {
-  margin-top: 25px; 
+  margin-top: 25px;
 }
 
 
@@ -275,7 +283,7 @@ header {
 .contact-left,
 .contact-right {
   flex: 1;
-  
+
 }
 
 .contact header {
@@ -304,7 +312,6 @@ header {
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 form input,
@@ -320,4 +327,67 @@ form textarea {
   height: 200px;
   resize: none;
 
+}
+.submit {
+  margin-top: 16px;
+}
+
+@media (max-width: 920px) {
+  .aboutme .bio {
+    flex-direction: column ;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-position: bottom calc(0% - 20px) right calc(100% - 20px); /* Shift image slightly left */
+  }
+  .carditems {
+  
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+  
+  }
+  .summary-content {
+  
+   flex-direction: column;
+
+  }
+  .summary-left {
+   margin-bottom: 10%;
+}
+
+.summary-left {
+  margin-bottom: 5%;
+}
+.contact {
+  
+  flex-direction: column;
+
+}
+.contact-left{
+  
+  margin-bottom: 10%;
+
+}
+
+form {
+  width: 48vh;
+}
+.aboutme .bio {
+  gap: 10px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .home {
+    background-position: bottom calc(0% - 50px) right calc(100% - 50px); /* Shift image more to the left */
+  }
+  form {
+    width: 37vh;
+  }
 }
