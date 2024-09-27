@@ -1,0 +1,100 @@
+.container {
+    height: 100vh;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(240, 236, 236, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px 20px;
+    border-radius: 10px;
+
+}
+
+.line
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+hr{
+    width: 100%;
+}
+.middle
+{
+    padding: 0px 10px;
+}
+.icons{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+i
+{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(240, 236, 236, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    
+}
+
+input {
+    padding: 15px 60px 15px 15px;
+    border-radius: 5px;
+    border: 0px none;
+}
+.checkbox
+{
+    margin-top: 20px;
+}
+button {
+    border-radius: 5px;
+    background-color: #AEFE14;
+    padding: 10px;
+    
+    font-size: 16px;
+    border: 0px none;
+    margin-top: 20px;
+    
+    color: rgb(145, 142, 142);
+}
+
+
+.calender-container
+{
+    display: inline-grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:20px;
+    text-align: center;
+}
+.date{
+  padding: 10px;
+}
