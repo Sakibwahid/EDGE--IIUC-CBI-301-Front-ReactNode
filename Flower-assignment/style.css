@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+
+}
+
+:root {
+    --primary-color: ;
+    --dark1: #272727;
+    --dark2: #474747;
+    --dark3: #757575;
+    --button: #E55473;
+    --background: #e9d0d5;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+   font-weight: 800;
+   font-size: 50px;
+   color: var(--dark1);
+}
+p
+{
+
+    color: var(--dark3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+.home {
+    background-color: var(--background);
+    display: flex;
+    height: 100vh;
+    gap: 20px;
+    
+   
+}
+
+.home-left {
+    align-content: center;
+    flex: 1;
+    margin-left: 10%;
+    margin-top: 20px;
+
+}
+button
+{
+    background-color: var(--button);
+    color: #ffff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 0px none;
+
+   }
+   
+
+.home-right {
+  flex: 1;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.home-right img{
+   height: 100%;
+   width: 75vh;
+  }
+.Featured-flowers{
+   text-align: center;
+   margin: 5% 10%;
+   background-color: beige;
+   height: 100vh;
+
+
+}
+.flower-tree{
+    display: flex;
+    justify-content: space-between;
+
+ 
+ 
+ }
+   .square{
+ 
+         height: 350px;
+         width: 350px;
+         border-top-left-radius: 50%;
+         border-top-right-radius: 50%;
+         background-color: #E55473;
+    }
+
+   
+ 
+
+  
