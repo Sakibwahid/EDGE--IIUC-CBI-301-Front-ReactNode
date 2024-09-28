@@ -76,29 +76,92 @@ button
    height: 100%;
    width: 75vh;
   }
-.Featured-flowers{
+
+  header{
+    color: var(--dark1);
+    font-size: 30px;
+    font-weight: 800;
+   }
+   p
+   {
+   
+       margin-top: 30px;
+       margin-bottom: 30px;
+    }
+
+
+.Featured{
    text-align: center;
-   margin: 5% 10%;
-   background-color: beige;
-   height: 100vh;
-
-
+   margin: 10%;
 }
-.flower-tree{
+.flower-container{
     display: flex;
-    justify-content: space-between;
-
- 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
  
  }
-   .square{
+
+.flower-item {
+    width: 32%;
+    text-align: center;
+}
+.flower-img {
+   
+    padding-top: 100%;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.flower-img.left , .flower-img.right
+{
+   
+    background-size: 60%;
+    background-position: bottom;
+    
+}
+a
+{
+
+    color: var(--dark2);
+    font-weight: 600;
+    text-decoration: underline;
+   
+ }
+ .features-container
+{
+   background-color: #27272717;
+   display: flex;
+   justify-content: center;
+   border-radius: 5px;
+   
+ }
+ .features-items
+ {
+    width: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .features-items img
+ {
+   height: 50px;
+   width: 50px;
+  }
+  .features-items p
+ {
+   margin: 10px 0px 0px 0px;
+   font-size: 12px;
+   font-weight: 600;
+
+  }
  
-         height: 350px;
-         width: 350px;
-         border-top-left-radius: 50%;
-         border-top-right-radius: 50%;
-         background-color: #E55473;
-    }
+ 
 
    
  
