@@ -334,6 +334,11 @@ footer p
     .home{
       height: 100vh; 
     }
+    .home-left {
+      align-content:start;
+      margin-top: 20%;
+    }
+    
     .flower-container{
      
       grid-template-columns: repeat(1,1fr);
